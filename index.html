@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Baby Brok</title>
   </head>
   <body>
@@ -19,14 +24,14 @@
           <div class="header__contact">
             <div class="header__data">
               <div class="header__data__phones">
-                <a class="header__data__phone" href="tel: (044) 236-33-67"
-                  >(044) 236-33-67</a
-                >,
-                <a class="header__data__phone" href="tel: (044) 236-33-67"
-                  >(044) 236-33-67</a
-                >
+                <a class="header__data__phone" href="tel:0442363367">
+                  (044) 236-33-67</a
+                >,&nbsp;
+                <a class="header__data__phone" href="tel:0442363367">
+                  (044) 236-33-67
+                </a>
               </div>
-              <nav class="header-order-menu">
+              <nav class="header__data__menu header-order-menu">
                 <a class="header-order-menu__link" class="" href="#"
                   >Доставка</a
                 >
@@ -48,7 +53,7 @@
                   placeholder="Пошук по магазину"
                 />
               </div>
-              <div class="language-selector">
+              <div class="header__language-selector language-selector">
                 <button class="language-selector__button" type="button">
                   Рус
                 </button>
@@ -62,7 +67,7 @@
                   Eng
                 </button>
               </div>
-              <nav class="header-user-menu">
+              <nav class="header__user-menu header-user-menu">
                 <a class="header-user-menu__link" href="#">Особистий кабінет</a>
                 <a class="header-user-menu__link" href="#">Вхід</a>
               </nav>
@@ -80,7 +85,9 @@
               <a class="header__tape__navigation__link" href="#">Контакти</a>
             </nav>
             <div class="header__tape__button">
-              <button class="button-basket" type="button">Кошик 0</button>
+              <button class="button-basket" type="button">
+                Кошик&nbsp;&nbsp;0
+              </button>
             </div>
           </div>
         </div>
@@ -88,47 +95,50 @@
     </header>
     <main class="main">
       <div class="container main-content">
-        <div class="aside">
-          <aside>
-            <nav class="main__navigation">
-              <a class="main__navigation__link" href="#">Автокрісла</a>
-              <a class="main__navigation__link" href="#"
-                >Аксесуари для немовлят та мам</a
-              >
-              <a class="main__navigation__link" href="#">Велосипеди</a>
-              <a class="main__navigation__link" href="#">Візочки</a>
-              <a class="main__navigation__link" href="#">Електромобілі</a>
-              <a class="main__navigation__link" href="#">Іграшки детально</a>
-              <a class="main__navigation__link" href="#">Канцтовари</a>
-              <a class="main__navigation__link" href="#">Качалки, толокар</a>
-              <a class="main__navigation__link" href="#">Коньки</a>
-              <a class="main__navigation__link" href="#"
-                >Манежі, манежі-ліжка</a
-              >
-              <a class="main__navigation__link" href="#">Матраци</a>
-              <a class="main__navigation__link" href="#">Меблі</a>
-              <a class="main__navigation__link" href="#"
-                >Мольберти, досточки для малювання
-              </a>
-              <a class="main__navigation__link" href="#">Надувні вироби</a>
-              <a class="main__navigation__link" href="#">Одяг</a>
-              <a class="main__navigation__link" href="#"
-                >Постільні комплекти, конверти</a
-              >
-              <a class="main__navigation__link" href="#">Предмети гігієни</a>
-              <a class="main__navigation__link" href=""
-                >Самокати, скейти, ролики</a
-              >
-              <a class="main__navigation__link" href="#">Санки</a>
-              <a class="main__navigation__link" href="#">Спортивні товари</a>
-              <a class="main__navigation__link" href="#">Ходунки</a>
-              <a class="main__navigation__link" href="#">Швейне виробництво</a>
-            </nav>
-          </aside>
-        </div>
+        <aside class="aside">
+          <nav class="main__navigation">
+            <a class="main__navigation__link" href="#">Автокрісла</a>
+            <a class="main__navigation__link" href="#"
+              >Аксесуари для немовлят та мам</a
+            >
+            <a class="main__navigation__link" href="#">Велосипеди</a>
+            <a class="main__navigation__link" href="#">Візочки</a>
+            <a class="main__navigation__link" href="#">Електромобілі</a>
+            <a class="main__navigation__link" href="#">Іграшки детально</a>
+            <a class="main__navigation__link" href="#">Канцтовари</a>
+            <a class="main__navigation__link" href="#">Качалки, толокар</a>
+            <a class="main__navigation__link" href="#">Коньки</a>
+            <a class="main__navigation__link" href="#">Манежі, манежі-ліжка</a>
+            <a class="main__navigation__link" href="#">Матраци</a>
+            <a class="main__navigation__link" href="#">Меблі</a>
+            <a class="main__navigation__link" href="#"
+              >Мольберти, досточки для малювання
+            </a>
+            <a class="main__navigation__link" href="#">Надувні вироби</a>
+            <a class="main__navigation__link" href="#">Одяг</a>
+            <a class="main__navigation__link" href="#"
+              >Постільні комплекти, конверти</a
+            >
+            <a class="main__navigation__link" href="#">Предмети гігієни</a>
+            <a class="main__navigation__link" href=""
+              >Самокати, скейти, ролики</a
+            >
+            <a class="main__navigation__link" href="#">Санки</a>
+            <a class="main__navigation__link" href="#">Спортивні товари</a>
+            <a class="main__navigation__link" href="#">Ходунки</a>
+            <a class="main__navigation__link" href="#">Швейне виробництво</a>
+          </nav>
+        </aside>
         <div class="section">
           <div class="slider">
-            <img src="./img/img-slider.jpg" alt="Слайдер Товарів"/>
+            <div class="slider-inner">
+              <img src="./img/img-slider.jpg" alt="Слайдер Товарів" />
+              <img src="./img/img-slider.jpg" alt="Слайдер Товарів" />
+              <img src="./img/img-slider.jpg" alt="Слайдер Товарів" />
+              <img src="./img/img-slider.jpg" alt="Слайдер Товарів" />
+              <img src="./img/img-slider.jpg" alt="Слайдер Товарів" />
+              <img src="./img/img-slider.jpg" alt="Слайдер Товарів" />
+            </div>
             <div class="slider__bottom">
               <span class="slider__bottom__text"
                 >Каталог постільних <br />комплектів</span
@@ -152,6 +162,264 @@
           <div class="list-of-goods">
             <p class="goods__title">Bestsellers</p>
             <div class="goods">
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/pram-goods.jpg"
+                    alt="Коляска зима-лето Stylo Clas FND maxi PG282"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Коляска зима-лето Stylo Clas FND maxi PG282
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <del class="goods__price__del">10304грн.</del>
+                    <span class="goods__price__currently">9274грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/wardrobe-goods.jpg"
+                    alt="Пеленальный комод Ежик (светлый)"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Пеленальный комод Ежик (светлый)
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <span class="goods__price__currently">1677грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/game-goods.jpg"
+                    alt="Multi Models Конструктор 50 моделей"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Multi Models Конструктор 50 моделей
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <span class="goods__price__currently">1148грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/pram2-goods.jpg"
+                    alt="Коляска PREMIER с сумкой фиолетовый цвет"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Коляска PREMIER с сумкой фиолетовый цвет
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <del class="goods__price__del">3586грн.</del>
+                    <span class="goods__price__currently">3227грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/pram-goods.jpg"
+                    alt="Коляска зима-лето Stylo Clas FND maxi PG282"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Коляска зима-лето Stylo Clas FND maxi PG282
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <del class="goods__price__del">10304грн.</del>
+                    <span class="goods__price__currently">9274грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/wardrobe-goods.jpg"
+                    alt="Пеленальный комод Ежик (светлый)"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Пеленальный комод Ежик (светлый)
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <span class="goods__price__currently">1677грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/game-goods.jpg"
+                    alt="Multi Models Конструктор 50 моделей"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Multi Models Конструктор 50 моделей
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <span class="goods__price__currently">1148грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/pram2-goods.jpg"
+                    alt="Коляска PREMIER с сумкой фиолетовый цвет"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Коляска PREMIER с сумкой фиолетовый цвет
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <del class="goods__price__del">3586грн.</del>
+                    <span class="goods__price__currently">3227грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/pram-goods.jpg"
+                    alt="Коляска зима-лето Stylo Clas FND maxi PG282"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Коляска зима-лето Stylo Clas FND maxi PG282
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <del class="goods__price__del">10304грн.</del>
+                    <span class="goods__price__currently">9274грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/wardrobe-goods.jpg"
+                    alt="Пеленальный комод Ежик (светлый)"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Пеленальный комод Ежик (светлый)
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <span class="goods__price__currently">1677грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/game-goods.jpg"
+                    alt="Multi Models Конструктор 50 моделей"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Multi Models Конструктор 50 моделей
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <span class="goods__price__currently">1148грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-item__img">
+                  <img
+                    src="./img/pram2-goods.jpg"
+                    alt="Коляска PREMIER с сумкой фиолетовый цвет"
+                  />
+                </div>
+                <div class="goods-item__links">
+                  <a class="goods-item__link" href="#">
+                    Коляска PREMIER с сумкой фиолетовый цвет
+                  </a>
+                </div>
+                <div class="goods__price">
+                  <div class="goods__price__text">
+                    <del class="goods__price__del">3586грн.</del>
+                    <span class="goods__price__currently">3227грн.</span>
+                  </div>
+                  <button class="goods__price__button" type="button">
+                    в кошик
+                  </button>
+                </div>
+              </div>
               <div class="goods-item">
                 <div class="goods-item__img">
                   <img
@@ -351,7 +619,11 @@
           <a class="footer__navigation__link" href="#">Кошик</a>
         </nav>
         <div class="footer__quality-mark">
-          <img class="footer__quality-mark__img" src="./img/footer-logo.png" alt="Знак якості" />
+          <img
+            class="footer__quality-mark__img"
+            src="./img/footer-logo.png"
+            alt="Знак якості"
+          />
           <p class="footer__quality-mark__text">
             © 2013 Baby Brok. Всі права захищені
           </p>
@@ -392,7 +664,7 @@
                   data-name="Векторний смарт-об’єкт"
                   width="28"
                   height="28"
-                  alt='Іконка Вконтакте'
+                  alt="Іконка Вконтакте"
                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACzElEQVRIibWWTWgTQRiG39lNs23asEltrEWIptDGQmyDoBi9iFDxVFrxoODFi3epBz0onr0UvIggXgRBpBTRUzxJ/MFSW5vGRKtE+kcPtUmT5qfJJhmZrabpTrKNuHlhYfJ9s98z70zY+QghBOaBEas0MDJGzJaLIIIMI0VLSZrPPM/NTlzPz05sioQQyXJ29AFpka8CpNlQmCoiEdF8TJC7HPnQK78AoJ20WC8AFI18BIvtEgC7CYCNErENlHJrM9ao2MZYDGgGLXH5BkliQNJwdxU+GRBUx2Ffh8jFtFpIlJBR6lu0CtTb0rFhJxfTKplM4mUkjSfBHJerCqQ6W+rz+bhYNfX0RJFWZjAe1oduOyzVdqhdzK2nnxBcjKPfacfN4aOQLWY17nK5MDgQw3joK1eDA+qdYUmzmA/hRUwvpRCIrGLQsx9nPAd3FmeSdGuhnjPUAp0yQTYr4JAswikLu/KP30R1a6GeLdUCR8+5kEgkIMsyujps5fy9F3OY/LHOvV8VqLcNWqDb7a6aH+6T8H7GhMBCnqvBAUGLXKIW8PazKYQW4+r4tLsTN4b61XF3dzfuDKVw+VEIvzK1DWw7/Ict/RhewuelTXX8LrKKkz0OnHJ3qr89Hg8crRGspQpcHY3D+oEFRSnPP+JoQu8+cdccgRDdens6VBigQnfPH0A8vr2ldrsdVqu1PGd5PY25lRRXgwfqnKEW6PV6q+YZ7NrDgG6tHWBB4RJ/9Ta8wsUqtRJLY/L7Gl4Hl7GZrV1nN7BYe+KVMT8X+x/9Adb+VxmtPR02Akipkt2C2NSAjq1CRWVL/b4DyNPYQhDth09wk4zUenQaQI71pU2IReNotvXC3GoDIaLa4xj1FPIKYtFvmPffR6n4hXXeErs/ARxnFzcA1s4Rg7yx25t9CeYBTAH4qbb6rH1jDTHrG9W20Vgguz42AMQA5H4Dwv5jS67NQgUAAAAASUVORK5CYII="
                 />
               </svg>
@@ -410,17 +682,36 @@
                   data-name="Векторний смарт-об’єкт"
                   width="28"
                   height="28"
-                  alt='Іконка Фейсбука'
+                  alt="Іконка Фейсбука"
                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACjklEQVRIibVWS2gTURQ9LzP5WNIkFhNIaq0uUmv8UUFxkVpXhboUqVmJIBZXons3LtxWKVJXggiu3LtoXejClTaLaqsVJEVrDYY2aTLRTj4zcmdidOZNJ2k+B4Y3ufe+c969897LZYwx9B8Z790fG78vOPdcYszhRwehqkq+Wv79fG157vb3j3MFBwB35PD5h6Kr5xpjzA+o6OTDGPMRdzh6bpq0SLBPdHkvqiqtpnuP0+NLANgrAggwh+DVs+oedA0ESNClLaENjMT6MTlxAiOxCLw9bki/ZLx4/QkzT9+YSd0kyNQ2BG9eiePyhZMGG4lGB/fBgpeJ+sg5mkI46OPEjOB5NUGLlTSFibFhQ9iPTF4rJSGdyVvy6hmqCudoCibCe7PzSC6t2c5sK0NzyYinEZcuaFHr3cvpPI24Wirp7N1JbQwHjbfgratjkIqy9v459RMPnrzi5rZU0lNHBzgbYehgyPDbircm2OKmsYH+PXneWkn5ldhh4cNXzRsJ+REO/SsrlbFQ3K6/W/G2lOGNO8+0cSoxiuuJeN0+/Xi+vpid0NaxMO9I/d/GnqujBx9QGnK1efDN+k0efEWpcI7mBIzZqEq1IZf4N5AwGj/LBdjhwEDE4D1+bBie3qDBtrWVx+L7ZWvBbkAr83/8tZJ2T5D2smISVKtledshiJ5cNseF2+HL6jre+oR6xHo6g1w2b5hRkAr6t61W6EZQSbBUzH1b9PYNnkkmF2zoeVD8I85qDWlzNQlAFhhjzuJGKuv0+IdElzfAmEPoZK+oVEplaSO1kl55OaMq1SXqvN0ADgE4DSBKPRA1O7tKdWfQoZToagXwDkBKa/WpfaOGmPpGrW3srGAJAG2OTQDyH5EUenDfXJZQAAAAAElFTkSuQmCC"
                 />
               </svg>
             </a>
           </div>
           <div class="footer__button">
-            <button class="footer__button__above" type="button">Вгору</button>
+            <button
+              id="scroll-to-top"
+              class="footer__button__above"
+              type="button"
+            >
+              Вгору
+            </button>
           </div>
         </div>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
