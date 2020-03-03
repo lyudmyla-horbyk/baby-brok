@@ -618,7 +618,7 @@ template {
   background-repeat: repeat;
   background-color: #fefefe;
   padding-top: 21px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 }
 .main-content {
   display: flex;
@@ -675,13 +675,14 @@ template {
   right: 8px;
 }
 .main__navigation__link:hover {
-  background-color: #d9d9d9;
-  color: black;
+  background: white;
+  color: #64b2d2;
   transition: 600ms;
 }
 .slider {
   height: 400px;
   position: relative;
+  overflow: hidden;
 }
 .slider__bottom {
   background-image: url("../img/slider-bottom-img.png");
@@ -698,8 +699,8 @@ template {
   font-family: "Opium";
   font-size: 24px;
   position: relative;
-  top: 17px;
-  left: 18px;
+  top: 18px;
+  left: 13px;
 }
 .slider__bottom__button {
   position: absolute;
@@ -714,10 +715,10 @@ template {
   background-color: transparent;
   border: none;
   right: 0;
-  top: 35px;
-  padding: 0 0 4px 0;
+  top: 38px;
+  padding: 0 0 0px 0;
   cursor: pointer;
-  text-indent: 16px;
+  text-indent: 24px;
   text-shadow: 0px 1px 0px rgba(224, 126, 22, 0.75);
 }
 .slider__bottom__button:after {
@@ -752,13 +753,14 @@ template {
   height: 100%;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 19px;
 }
 .slider__bottom__dot {
   border-radius: 50%;
   width: 15px;
   height: 15px;
   background-color: #0095da;
-  margin-right: 22px;
+  margin-right: 16px;
 }
 .slider__bottom__dot.active {
   background-color: rgba(253, 160, 7, 0);
@@ -772,6 +774,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .goods .slick-list {
   margin-left: -9px;
@@ -784,6 +787,8 @@ template {
   font-family: "Opium";
   color: #4e4e4e;
   margin-left: 18px;
+  margin-bottom: 14px;
+  margin-top: 31px;
 }
 .goods-item {
   /* border: 1px solid gray; */
@@ -816,17 +821,15 @@ template {
   height: 56px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .goods-item__link {
-  font-size: 14px;
+  font-size: 13px;
   font-family: "ArialRegular";
   color: rgb(0, 106, 155);
   line-height: 1.2;
   text-align: center;
-  padding-left: 22px;
-    padding-right: 6px;
-  text-overflow: ellipsis;
+  padding-left: 14px;
+  padding-right: 6px;
 }
 .goods__price {
   width: 164px;
@@ -1004,7 +1007,7 @@ template {
 .about-company {
   width: 438px;
   height: 416px;
-  margin-top: 22px;
+  margin-top: 25px;
 }
 .company-news {
   width: 220px;
@@ -1021,17 +1024,19 @@ template {
   font-size: 13px;
   font-family: "ArialRegular";
   color: #4e4e4e;
-  line-height: 20px;
+  line-height: 19px;
 }
 .about-us__link {
   color: #006a9b;
   font-size: 13px;
   font-family: "ArialRegular";
+  line-height: 1;
 }
 .about-us__summary {
   font-size: 16px;
   font-family: "ArialBoldItalic";
   color: #4e4e4e;
+  margin-top: 22px;
 }
 .about-us__list {
   list-style: none;
@@ -1048,7 +1053,7 @@ template {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAALCAYAAACzkJeoAAAAd0lEQVQYlW3OsQnCUBRG4U/RTlwjhbWLaOMEtnYK2UBsTJEZbATXEGurjCF2FsqDF4iXd9rDuf8dabs9TvgKjHHEFfOSTKzwwKIkExXu2JRkYoYLzphO4k5mh08sexrUsXxjm08byg5rPONDNyyHopeHXLz+BvAD8TMSj2FbcCcAAAAASUVORK5CYII=");
   background-repeat: no-repeat;
   background-position: 9px 4px;
-  margin-top: 7px;
+  margin-top: 5px;
   margin-bottom: 8px;
 }
 .company-news__date {
@@ -1056,20 +1061,21 @@ template {
   font-family: "ArialBold";
   line-height: 20px;
   color: #4e4e4e;
-  margin: 2px;
+  margin: 1px;
   text-decoration: none;
 }
 .company-news__link {
   font-size: 12px;
   font-family: "ArialRegular";
   color: #006a9b;
+  line-height: 19px;
 }
 .horizontal-line {
   background-image: url("data:image/jpeg;base64,/9j/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwMBAQEBAQEBAgEBAgICAQICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA//dAAQAHP/uAA5BZG9iZQBkwAAAAAH/wAARCAABANwDABEAAREBAhEB/8QATQABAQAAAAAAAAAAAAAAAAAAAAoBAQEBAAAAAAAAAAAAAAAAAAAEBRABAAAAAAAAAAAAAAAAAAAAABEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAAABEQIRAD8AtQZCsAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k=");
   width: 220px;
   height: 1px;
   margin-top: 11px;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
 }
 /* FOOTER */
 
@@ -1097,13 +1103,12 @@ template {
   display: flex;
 }
 .footer__navigation {
-  width: 570px;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 24px;
-  padding-left: 20px;
+  width: 170px;
+}
+.footer__navigation__container {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 22px;
 }
 .footer__navigation__link {
   line-height: 20px;
@@ -1111,50 +1116,73 @@ template {
   font-family: "ArialRegular";
   color: #4e4e4e;
   text-decoration: none;
+  display: block;
+}
+.footer__navigation-second {
+  margin-right: 58px;
+  margin-left: 21px;
 }
 .footer__quality-mark {
-  width: 190px;
+  width: 168px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   line-height: 14px;
-  padding-top: 24px;
-  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: 36px;
+}
+.footer__quality-mark__img-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 33px;
+  padding-top: 16px;
+  box-sizing: border-box;
 }
 .footer__quality-mark__text {
   font-size: 11px;
   font-family: "ArialRegular";
   color: #8c8c8c;
   margin: 7px;
+  line-height: 1.1;
 }
 .footer__social-networks {
-  height: 103px;
-  width: 124px;
+  height: 107px;
+  width: 118px;
   background-color: #0095da;
   box-shadow: 0px 0px 4px 0px rgba(0, 1, 1, 0.08);
   display: flex;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 4px;
 }
 .footer__more-information {
-  width: 124px;
-  margin-left: 67px;
+  margin-left: auto;
+  margin-right: 24px;
+  overflow: hidden;
 }
 .footer__button__above {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(243, 242, 240);
   background-color: rgb(233, 231, 226);
-  width: 124px;
+  width: 118px;
   height: 34px;
   font-size: 13px;
   font-family: "ArialRegular";
   color: rgb(0, 149, 218);
   line-height: 1.2;
   position: relative;
-  margin-top: 11px;
+  margin-top: 9px;
   cursor: pointer;
+  outline: none;
+  padding-left: 20px;
 }
 .footer__button__above::after {
   content: "";
@@ -1163,8 +1191,8 @@ template {
   height: 7px;
   width: 11px;
   position: absolute;
-  left: 25px;
-  top: 10px;
+  left: 29px;
+  top: 11px;
 }
 .footer__button__above:hover {
   background-color: #ff9727;
