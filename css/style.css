@@ -474,8 +474,6 @@ template {
 .header__language-selector {
   margin-left: 10px;
   margin-right: 5px;
-}
-.language-selector {
   display: flex;
 }
 .language-selector__button {
@@ -701,6 +699,7 @@ template {
   position: relative;
   top: 18px;
   left: 13px;
+  width: 216px;
 }
 .slider__bottom__button {
   position: absolute;
@@ -1158,9 +1157,24 @@ template {
   align-items: flex-end;
   justify-content: space-around;
   box-sizing: border-box;
-  padding-bottom: 4px;
+  padding-bottom: 9px;
   padding-left: 5px;
   padding-right: 4px;
+}
+.footer__google-icon {
+  background-image: url("../img/google.png");
+  height: 27px;
+  width: 28px;
+}
+.footer__vkontakte-icon {
+  background-image: url("..//img/vkontakte.png");
+  height: 27px;
+  width: 28px;
+}
+.footer__facebook-icon {
+  background-image: url("../img/facebook.png");
+  height: 27px;
+  width: 28px;
 }
 .footer__more-information {
   margin-left: auto;
