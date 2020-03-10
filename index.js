@@ -10,37 +10,41 @@ function scrollToTop() {
   }
 }
 $(document).ready(function() {
-  const $sliderInner = $(".slider-inner");
+  const $catalogSlider = $(".slider-catalog");
   const $dots = $(".slider .slider__bottom__dot");
-  $sliderInner.slick({
+  $catalogSlider.slick({
     arrows: false,
     dots: 0,
     initialSlide: 1,
     autoplay: true
   });
-  $sliderInner.on("afterChange", function(event, slick, currentSlide) {
+  $catalogSlider.on("afterChange", function(event, slick, currentSlide) {
     $dots.removeClass("active");
     $dots.eq(currentSlide).addClass("active");
   });
   $dots.click(function(e) {
     e.preventDefault();
-    $sliderInner.slick("slickGoTo", $(this).index());
+    $catalogSlider.slick("slickGoTo", $(this).index());
     $dots.removeClass("active");
     $(this).addClass("active");
   });
-  const $sliderGoods = $(".goods");
+  const $bestsellersGoodsSlider = $(".goods");
   const $buttons = $(
     ".goods-pagination .page-link:not(.left-arrow):not(.right-arrow)"
   );
   const $leftArrow = $(".goods-pagination .left-arrow");
   const $rightArrow = $(".goods-pagination .right-arrow");
-  $sliderGoods.slick({
+  $bestsellersGoodsSlider.slick({
     arrows: false,
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 4
   });
-  $sliderGoods.on("afterChange", function(event, slick, currentSlide) {
+  $bestsellersGoodsSlider.on("afterChange", function(
+    event,
+    slick,
+    currentSlide
+  ) {
     $buttons.removeClass("active");
     console.log("current slide", currentSlide);
     $buttons.eq(Math.round(currentSlide / 4)).addClass("active");
@@ -49,16 +53,16 @@ $(document).ready(function() {
     console.log($($buttons).index(this));
     console.log($($buttons).index(this) * 4 + 1);
     e.preventDefault();
-    $sliderGoods.slick("slickGoTo", $($buttons).index(this) * 4);
+    $bestsellersGoodsSlider.slick("slickGoTo", $($buttons).index(this) * 4);
     $buttons.removeClass("active");
     $(this).addClass("active");
   });
   $leftArrow.click(function(e) {
     e.preventDefault();
-    $sliderGoods.slick("slickPrev");
+    $bestsellersGoodsSlider.slick("slickPrev");
   });
   $rightArrow.click(function(e) {
     e.preventDefault();
-    $sliderGoods.slick("slickNext");
+    $bestsellersGoodsSlider.slick("slickNext");
   });
 });
