@@ -357,6 +357,9 @@ template {
   background-image: url("data:image/gif;base64,R0lGODlhBAABAPAAAOro4+3s6CH5BAAAAAAALAAAAAAEAAEAAAIChFMAOw==");
   background-repeat: repeat;
   background-color: #eae8e3;
+  position: relative;
+  margin-bottom: 45px;
+  height: 117px;
 }
 .container {
   width: 980px;
@@ -390,10 +393,13 @@ template {
 }
 .header__tape {
   height: 53px;
-  margin-top: -5px;
   background-image: url("../img/header-tape.png");
   background-repeat: repeat-x;
   background-position: center;
+  position: absolute;
+  left: 0;
+  top: 109px;
+  right: 0;
 }
 .header__bottom {
   display: flex;
@@ -694,6 +700,8 @@ template {
   position: relative;
   top: 18px;
   left: 13px;
+  margin: 0;
+  font-weight: normal;
   width: 216px;
 }
 .slider__bottom__button {
@@ -783,6 +791,7 @@ template {
   margin-left: 18px;
   margin-bottom: 14px;
   margin-top: 31px;
+  font-weight: normal;
 }
 .goods-item {
   /* border: 1px solid gray; */
@@ -1009,6 +1018,7 @@ template {
   color: #4e4e4e;
   font-family: "Opium";
   margin: 0;
+  font-weight: normal;
 }
 .about-us__text {
   font-size: 13px;
@@ -1042,8 +1052,7 @@ template {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAALCAYAAACzkJeoAAAAd0lEQVQYlW3OsQnCUBRG4U/RTlwjhbWLaOMEtnYK2UBsTJEZbATXEGurjCF2FsqDF4iXd9rDuf8dabs9TvgKjHHEFfOSTKzwwKIkExXu2JRkYoYLzphO4k5mh08sexrUsXxjm08byg5rPONDNyyHopeHXLz+BvAD8TMSj2FbcCcAAAAASUVORK5CYII=");
   background-repeat: no-repeat;
   background-position: 9px 4px;
-  margin-top: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 .company-news__date {
   font-size: 10px;
