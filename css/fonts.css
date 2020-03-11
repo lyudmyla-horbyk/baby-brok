@@ -1,68 +1,54 @@
-/* font-family: "ArialRegular"; */
+/* font-family: "Arial"; */
 @font-face {
-  font-family: "ArialRegular";
+  font-family: "Arial";
   src: url("../fonts/ArialRegular/ArialRegular.eot");
-  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")
+  src: local("Arial"),
+    url("../fonts/ArialRegular/ArialRegular.eot?#iefix")
       format("embedded-opentype"),
     url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
     url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
-
-/* font-family: "ArialBold"; */
 @font-face {
-  font-family: "ArialBold";
+  font-family: "Arial";
   src: url("../fonts/ArialBold/ArialBold.eot");
-  src: url("../fonts/ArialBold/ArialBold.eot?#iefix")
-      format("embedded-opentype"),
+  src: local("Arial"),
+    url("../fonts/ArialBold/ArialBold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ArialBold/ArialBold.woff") format("woff"),
     url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
-
-/* font-family: "ArialItalic"; */
 @font-face {
-  font-family: "ArialItalic";
+  font-family: "Arial";
   src: url("../fonts/ArialItalic/ArialItalic.eot");
-  src: url("../fonts/ArialItalic/ArialItalic.eot?#iefix")
+  src: local("Arial"),
+    url("../fonts/ArialItalic/ArialItalic.eot?#iefix")
       format("embedded-opentype"),
     url("../fonts/ArialItalic/ArialItalic.woff") format("woff"),
     url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
-  font-style: normal;
+  font-style: italic;
   font-weight: normal;
 }
-
-/* font-family: "ArialBlack"; */
 @font-face {
-  font-family: "ArialBlack";
-  src: url("../fonts/ArialBlack/ArialBlack.eot");
-  src: url("../fonts/ArialBlack/ArialBlack.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/ArialBlack/ArialBlack.woff") format("woff"),
-    url("../fonts/ArialBlack/ArialBlack.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-/* font-family: "ArialBoldItalic"; */
-@font-face {
-  font-family: "ArialBoldItalic";
+  font-family: "Arial";
   src: url("../fonts/ArialBoldItalic/ArialBoldItalic.eot");
-  src: url("../fonts/ArialBoldItalic/ArialBoldItalic.eot?#iefix")
+  src: local("Arial"),
+    url("../fonts/ArialBoldItalic/ArialBoldItalic.eot?#iefix")
       format("embedded-opentype"),
     url("../fonts/ArialBoldItalic/ArialBoldItalic.woff") format("woff"),
     url("../fonts/ArialBoldItalic/ArialBoldItalic.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* font-family: "Opium"; */
 @font-face {
   font-family: "Opium";
   src: url("../fonts/OpiumRegular/OpiumNormal.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/OpiumRegular/OpiumNormal.eot?#iefix")
+  src: local("Opium"),url("../fonts/OpiumRegular/OpiumNormal.eot?#iefix")
       format("embedded-opentype"),
     /* IE6-IE8 */ url("../fonts/OpiumRegular/OpiumNormal.otf")
       format("opentype"),
