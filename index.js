@@ -1,3 +1,5 @@
+const INITIAL_SLIDE = 3;
+
 let scroolToTopButton = document.getElementById("scroll-to-top");
 scroolToTopButton.addEventListener("click", function() {
   scrollToTop();
@@ -9,15 +11,29 @@ function scrollToTop() {
     window.scrollTo(0, c - c / 8);
   }
 }
+
 $(document).ready(function() {
   const $catalogSlider = $(".slider-catalog");
-  const $dots = $(".slider .slider__bottom__dot");
+
+  var count = $(".slider-catalog").children().length;
+  console.log(count);
+  var dotsWrapper = document.querySelector(".slider__bottom__dots-wrapper");
+  for (let i = 1; i <= count; i++) {
+    var dot = document.createElement("a");
+    dot.setAttribute("class", "slider__bottom__dot");
+    dot.setAttribute("href", "#");
+    if (i === INITIAL_SLIDE) {
+      dot.classList.add("active");
+    }
+    dotsWrapper.appendChild(dot);
+  }
   $catalogSlider.slick({
     arrows: false,
     dots: 0,
-    initialSlide: 1,
+    initialSlide: INITIAL_SLIDE,
     autoplay: true
   });
+  const $dots = $(".slider .slider__bottom__dot");
   $catalogSlider.on("afterChange", function(event, slick, currentSlide) {
     $dots.removeClass("active");
     $dots.eq(currentSlide).addClass("active");
