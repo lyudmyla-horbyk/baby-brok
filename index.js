@@ -16,7 +16,6 @@ $(document).ready(function() {
   const $catalogSlider = $(".slider-catalog");
 
   var count = $(".slider-catalog").children().length;
-  console.log(count);
   var dotsWrapper = document.querySelector(".slider__bottom__dots-wrapper");
   for (let i = 1; i <= count; i++) {
     var dot = document.createElement("a");
